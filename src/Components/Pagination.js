@@ -11,3 +11,6 @@ function Pagination() {
      </div>
   )
 }
+
+
+export default Pagination;
