@@ -24,6 +24,10 @@ function MoviesTable(props) {
     filteredContent=content.movies;
   }
 
+  if(content.movies){
+    filteredContent=filteredContent.slice(0,props.moviesCount);
+  }
+
   return (
     <div>{isLoaded === true ? <div className="font-bold"> Loading...</div> :
       <table className="table-auto">
